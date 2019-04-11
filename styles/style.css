@@ -1,0 +1,44 @@
+.done {
+  text-decoration: line-through;
+  text-decoration-style: solid;
+}
+
+.highlight,
+.highlightActive {
+  background-color: yellow;
+}
+
+li {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.ilButton {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.highlightButton {
+  width: 10px;
+  height: 15px;
+  margin-left: 7px;
+}
+
+.doneButton {
+  width: 15px;
+  height: 20px;
+  margin-top: 3px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("http://www.clker.com/cliparts/t/F/v/y/g/I/nxt-checkbox-checked-md.png");
+}
+
+.doneActive {
+  background-image: url("http://www.clker.com/cliparts/e/q/p/N/s/G/checkbox-unchecked-md.png");
+}
