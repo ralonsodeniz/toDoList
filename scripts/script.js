@@ -84,7 +84,7 @@ function changeElementProperty(listItems) {
 
 // add items
 enterSource.addEventListener("click", () => {
-  // the () => is the same as function() but remember that arrow functions does not bind so you cannot use this
+  // the () => is the same as function() but remember that arrow functions always be called with the context in which it was defined and cannot be rebind this to the new context | bind still has value for function arguments: .bind(undefined, arg1, arg2, arg3)
   if (inputLenght() > 0) {
     // we check if there a user entry in the text input before adding an element to the list
     createListElement();
@@ -95,7 +95,6 @@ enterSource.addEventListener("click", () => {
 
 userInputSource.addEventListener("keypress", event => {
   // event is a parameter of the arrow function
-  // the () => is the same as function() but remember that arrow functions does not bind so you cannot use this
   if (inputLenght() > 0 && event.keyCode === 13) {
     // we check if there a user entry in the text input before adding an element to the list
     createListElement();
