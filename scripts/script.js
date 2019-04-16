@@ -84,7 +84,7 @@ function changeElementProperty(listItems) {
 
 // add items
 enterSource.addEventListener("click", () => {
-  // the () => is the same as function() but remember that arrow functions always be called with the context in which it was defined and cannot be rebind this to the new context | bind still has value for function arguments: .bind(undefined, arg1, arg2, arg3)
+  // the () => is the same as function() but remember that arrow functions always will be called with the context in which it was defined and cannot be rebind this to a new context | bind still has value for function arguments: .bind(undefined, arg1, arg2, arg3) | undefined would be the new this context, which cannot be changed and thats why the paraementer is undefined
   if (inputLenght() > 0) {
     // we check if there a user entry in the text input before adding an element to the list
     createListElement();
